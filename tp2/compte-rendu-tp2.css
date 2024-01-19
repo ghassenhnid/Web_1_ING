@@ -1,0 +1,27 @@
+h1{
+    font-size: 26px;
+}
+h2{
+    font-size: 22px;
+    color: lightgray;
+}
+
+li{
+    list-style: upper-roman;
+}
+table{ 
+    width: 100%;
+}
+table th{
+    text-align: center;
+    font-variant: small-caps;
+}
+th, td{
+    padding: 1%;
+}
+.left{
+    text-align: left;
+}
+.center{
+    text-align: center;
+}
