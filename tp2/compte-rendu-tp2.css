@@ -6,7 +6,7 @@ h2{
     color: lightgray;
 }
 
-li{
+.roman-list{
     list-style: upper-roman;
 }
 table{ 
@@ -16,12 +16,28 @@ table th{
     text-align: center;
     font-variant: small-caps;
 }
-th, td{
+table, th, td{
     padding: 1%;
 }
 .left{
     text-align: left;
 }
-.center{
+
+.roman-list span, span{
+    font-weight: bold;
+}
+
+td:nth-child(1),
+td:nth-child(2) {
+    text-align: left;
+}
+td:nth-child(3){
     text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #e6f7ff;
+}
+tr:hover {
+    background-color: #26182c; /* Correspond à 38 rouge, 24 vert, 44 bleu en décimal */
 }

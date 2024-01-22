@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta charset="utf-8">
+  <style>
+    body{
+      display: flex; /*J'utilise le modèle de boîte flexible pour aligner les éléments horizontalement */
+    }
+    body div{
+      margin: 0 20px 0 0;
+      padding: 0px;
+    }
+    div img{
+      width: 250px;
+      float: left;
+      border: 1px solid #aaaaaa;
+      bottom: 5px;
+      position: relative;
+    }
+
+    div > div {
+      color: blue;
+      background-color: black;
+      text-align: center;
+      padding: 10px;
+      margin: 0; /* Supprime la marge par défaut pour une apparence plus propre */
+    }
+    div img:hover {
+      opacity: 0.8; /* Réduit l'opacité à 0.8 lorsque l'utilisateur survole l'image */
+    }
+    .end {
+      text-align: center;
+      margin-top: 20px;
+      position: fixed;
+      margin-top: 280px;
+    }
+    
+  </style>
+ </head>
+ <body>
+   <div>
+    <img src="animal1.jpg">
+    <div>Animal 1</div>
+   </div>
+   <div>
+    <img src="animal2.jpg">
+    <div>Animal 2</div>
+   </div>
+   <div>
+    <img src="animal3.jpg">
+    <div>Animal 3</div>
+   </div>
+   <div>
+    <img src="animal4.jpg">
+    <div>Animal 4</div>
+   </div>
+   <div>
+    <img src="animal5.jpg">
+    <div>Animal 5</div>
+   </div>
+   <div>
+    <img src="animal6.jpg">
+    <div>Animal 6</div>
+   </div>
+  <div class="end"></div>
+  <div class="end"> 
+   Ce texte doit s'afficher après toute les images en bas.
+  </div>
+ </body>
+</html>

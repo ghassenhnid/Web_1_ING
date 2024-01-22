@@ -26,6 +26,7 @@
         }
         a {
             font-weight: bold;
+            text-decoration: none;
         }
         a:hover {
             color: teal;
@@ -36,72 +37,247 @@
 <body>
 
     
-    <h1 class="centered">Compte rendu du TP2</h1>
+    <h1 class="centered">Compte rendu du TP2 : Feuille de Style, boite et inline </h1>
     <div class="right">Ghassen HNID</div>
     
-    <h2 style="color: #b22222;" >Exercice 1 - Style de base</h2>
-    <a href="https://forax.github.io/course/progweb">Cours de Programmation Web</a>
+    <h2 style="color: #842E1B;" >Exercice 1 - Style de base</h2>
+    <ol class="roman-list">
+        <li>
+            <span>Titre de l'exercice en rouge brique :</span>
+            <p>J'ai ajouté un attribut style avec l'élément "color : #842E1B;". C'est le code couleur en hexadécimal de la couleur rouge "brique".</p>
+        </li>
+    
+        <li>
+            <span>Appliquer une police sans-serif pour tout le document :</span>
+            <p>Dans ce cas, j'ai choisi la police Arial de sans-serif, pour avoir la même dans tous les navigateurs.</p>
+        </li>
+    
+        <li>
+            <span>Appliquer la taille de police pour h1, h2 et h3 :</span>
+            <p>Pour attribuer une taille de police à une balise, on utilise la propriété "font-size", avec la valeur en px.</p>
+            <p>Exemple : h1{ font-size: 26px; }</p>
+        </li>
+
+        <li>
+            <span>Afficher les h2 en gris clair (à part le titre du 1er exercice) :</span>
+            <p>On applique à "h2" la propriété "color" en lui donnant la valeur "lightgray". On garde l'attribut "color: #842E1B;" au titre du 1er exercice qui écrasera la valeur initiale de la propriété "color" (lightgray).</p>
+        </li>
+
+        <li>
+            <span>Centrer le titre du TP :</span>
+            <p>J'ai crée une classe "centered" en utilisant la propriété "text-align" :</p>
+            <p>".centered{ text-align: center; }"</p>
+            <p>Pour utiliser cette classe, je l'appelle dans l'attribut "class" :</p>
+            <p>"&lt;h1 class="centered"&gt;Compte rendu du TP2&lt;/h1&gt;"</p>
+        </li>
+
+        <li>
+            <span>Aligner mon nom à droite :</span>
+            <p>J'ai crée une classe sous le nom "right" : ".right{text-align: right;}".</p>
+            <p>Ensuite je l'ai appelé de l'attribut "class" : "&lt;div class="right"&gt;Ghassen HNID&lt;/div&gt;"</p>
+        </li>
+    
+        <li>
+            <span>Lien vers le cours :</span>
+            <a href="https://forax.github.io/course/progweb">Cours de Programmation Web</a>
+            <p>Pour répondre à cette question, j'ai modifié le style de l'élément "a", avec "font-weight: bold;" pour que le lien soit en gras.</p>
+            <p>En plus, j'ai modifié le style de l'élément "a" le moment où on survole le lien avec la souris en utilisant "a:hover", lui donnant la couleur teal ("color: teal;") et aussi "font-weight: normal;" pour qu'il ne reste pas en gras.</p>
+        </li>
+    </ol>
+    
     
     <h2>Exercice 2 - Style de liste et de table</h2>
-    <ul>
-        <li>Question 1 :</li>
+    <ol class="roman-list">
         <li>
-            Question 2 :
-            <p>La liste des questions de cet exercice et de l'exercice précédent utilise les chiffres romains</p>
+            <span>Créer une feuille de style externe :</span>
+            <p>J'ai ajouté une balise &lt;link&gt; appelant le fichier "compte-rendu-tp2.css".</p>
         </li>
-        
+
         <li>
-            <p>Question 3 :</p>
+            <span>Lister les questions des deux premiers exercices en utilisant les chiffres romains :</span>
+            <p>Pour utiliser des chiffres romains, je crée une nouvelle classe "roman-list" et je lui donne la propriété : "list-style: upper-roman;". Ensuite, j'appelle "roman-list" dans l'attribut class des deux &lt;ol&gt; de l'exercice 1 et 2.</p>
+        </li>
+
+        <li>
+            <span>La table HTML :</span>
             <table>
                 <thead>
-                    <th class="left">Rang</th>
-                    <th class="left">Titre</th>
-                    <th class="center">Recette actuelle</th>
+                    <th>Rang</th>
+                    <th>Titre</th>
+                    <th>Recette actuelle</th>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="left">1.</td>
-                        <td class="left">Barbie</td>
-                        <td class="center">$636,236,256</td>
+                        <td>1.</td>
+                        <td>Barbie</td>
+                        <td>$636,236,256</td>
                     </tr>
 
                     <tr>
-                        <td class="left">2.</td>
-                        <td class="left">The Super Mario Bros. Movie</td>
-                        <td class="center">$574,934,330</td>
+                        <td>2.</td>
+                        <td>The Super Mario Bros. Movie</td>
+                        <td>$574,934,330</td>
                     </tr>
 
                     <tr>
-                        <td class="left">3.</td>
-                        <td class="left">Spider-Man: Across the Spider-Verse</td>
-                        <td class="center">$381,311,319</td>
+                        <td>3.</td>
+                        <td>Spider-Man: Across the Spider-Verse</td>
+                        <td>$381,311,319</td>
                     </tr>
                     <tr>
-                        <td class="left">4.</td>
-                        <td class="left">Guardians of the Galaxy Vol. 3</td>
-                        <td class="center">$358,995,815</td>
+                        <td>4.</td>
+                        <td>Guardians of the Galaxy Vol. 3</td>
+                        <td>$358,995,815</td>
                     </tr>
                     <tr>
                         <td class="left">5.</td>
                         <td class="left">Oppenheimer</td>
-                        <td class="center">$326,434,905</td>
+                        <td class="centered">$326,434,905</td>
                     </tr>
                 </tbody>
             </table>
         </li>
 
-        <li>Question 4 :</li>
-        <table>
-            
+        <li>
+            <span>Occuper toute la largeur :</span>
+            <p>J'utilise la propriété "width: 100%;" que je donne à la balise table.</p>
+        </li>
 
-            <tbody>
+        <li>
+            <span>Centrer les titres et changer la police :</span>
+            <p>Pour centrer les titres, j'utilise "text-align: center;" pour les balises th de la balise table.</p>
+            <p>Pour utiliser des petites majuscules, "font-variant: small-caps;".</p>
+        </li>
 
-            </tbody>
-            
-        </table>
+        <li>
+            <span>Aérer la table :</span>
+            <p>Je donne la propriété "padding: 1%;" aux balises th et td du tableau, ainsi que pour la balise table.</p>
+        </li>
+
+        <li>
+            <span>Aligner les deux premières colonnes à gauche + centrer les éléments de la troisième colonne :</span>
+            <p>Pour faire simple, j'utilise les règles "td:nth-child(1)" et "td:nth-child(2)" donnant l'élément "text-align: left;".</p>
+            <p>Pour la troisième colonne, j'utilise le même principe : "td:nth-child(3)" donnant l'élément "text-align: center;".</p>
+        </li>
+
+        <li>
+            <span>Changer la couleur de fond des lignes paires</span>
+            <p>Pour changer la couleur de fond des lignes paires du tableau en bleu clair, on utilise la pseudo-classe ":nth-child".</p>
+        </li>
+
+        <li>
+            <span>La couleur du fond quand on survole une ligne du tableau :</span>
+            <p>Rouge (38 en décimal) : Diviser 38 par 16 donne 2 avec un reste de 6. Le chiffre hexadécimal correspondant est 2. Donc, 38 en hexadécimal est 26.</p>
+            <p>Vert (24 en décimal) : Diviser 24 par 16 donne 1 avec un reste de 8. Le chiffre hexadécimal correspondant est 1. Donc, 24 en hexadécimal est 18.</p>
+            <p>Bleu (44 en décimal) : Diviser 44 par 16 donne 2 avec un reste de 12. Le chiffre hexadécimal correspondant est 2. Le reste 12 est représenté en hexadécimal comme C. Donc, 44 en hexadécimal est 2C.</p>
+            <p>En combinant ces chiffres hexadécimaux, on obtient #26182C comme codage hexadécimal correspondant à la couleur spécifiée.</p>
+        </li>
+    </ol>
+
+    <h2>Exercice 3 - Vignettes</h2>
+    <ol>
+        <li>
+            <span>Récupération des images + du fichier exo3.html</span>
+        </li><br>
         
-    </ul>
+        <li>
+            <span>Largeur (width) de 250 pixels :</span>
+            <p>Pour fixer la largeur de toutes les images à l'intérieur des boites à 250px, on utilise l'élément "div img" et on lui donne la propriété "width: 250px;". Cela permet de spécifier que toutes les images à l'intérieur d'éléments &lt;div&gt; auront une largeur de 250 pixels.</p>
+        </li>
 
+        <li>
+            <span>Afficher les images horizontalement :</span>
+            <p>En ajoutant la propriété "float: left;", chaque image à l'intérieur des éléments &lt;div&gt; flottera du côté gauche et les suivantes s'aligneront horizontalement</p>
+        </li>
+
+        <li>
+            <span>Que se passe-t-il si l'on fait varier la taille de la fenêtre du navigateur horizontalement ?</span>
+            <p>Quand l'espace horizontal devient insuffisant pour afficher toutes les images à la largeur spécifiée, les images déborde hors de leur conteneur (souvent revenant à la ligne), ce qui entraîne une mise en page indésirable.</p>
+        </li>
+
+        <li>
+            <span>Mettre toutes les images à droite :</span>
+            <p>Oui, on peut aligner toutes les images à droite en changeant "float: left;" en "float: right;" dans la partie CSS du document.</p>
+        </li>
+
+        <li>
+            <span>Titres affichés en blanc sur fond noir centrés horizontalement  par rapport à la boite qui les contient :</span>
+            <p>À ce niveau, je peux utiliser les sélecteurs avancés pour cibler spécifiquement les titres à l'intérieur des divs (div &gt; div).</p>
+        </li>
+
+        <li>
+            <span>Espacez les unes des autres les boites contenant les images :</span>
+            <p>Pour espacer les boîtes contenant les images les unes des autres, j'utilise la propriété margin dans le sélecteur "body div"</p>
+        </li>
+
+        <li>
+            <span>Changer l'opacité lors du survol de l'utilisateur</span>
+            <p>J'utilise la propriété opacity avec un sélecteur :hover sur les images dans une boîte div.</p>
+        </li>
+
+        <li>
+            <span>Titre des images :</span>
+            <p>
+                Utilisation de "position: relative;" et "bottom: 5px;"" dans "div img" pour aligner les titres en bas des images avec un débordement de 5 pixels.
+                "float: left;" positionne les images du côté gauche, et "opacity: 0.8;" crée un effet de survol esthétique.
+            </p>
+            <p>.end est positionné en haut de la page avec position: fixed; et margin-top: 280px;.</p>
+        </li>
+    </ol>
+
+    <h2>Exercice 4 - Barre de menu</h2>
+
+    <ol>
+        <li>
+            <span>Donner la liste une position fixe :</span>
+            <p>J'ajoute la propriété "position: fixed;"" à la liste (ul), avec "top: 0;"" et "left: 0;"" pour la positionner en haut à gauche de la fenêtre du navigateur.</p>
+        </li>
+        
+        <li>
+            <span>Supprimer le style par défaut des items de liste :</span>
+            <p>Il faut ajouter la propriété list-style-type et la définir sur none.</p>
+        </li>
+
+        <li>
+            <span>Affichez les items en gras et avec une police Courrier :</span>
+            <p>La règle "ul li" applique le style gras et la police spécifiée à tous les éléments &lt;li&gt; à l'intérieur de la liste &lt;ul&gt;. La police choisie ici est "'Courier New', Courier, monospace", ce qui donne la priorité à la police Courrier New, mais utilise Courier s'il n'est pas disponible</p>
+        </li>
+
+        <li>
+            <span>Afficher les items horizontalement :</span>
+            <p>J'ajoute "display: inline-block;"" pour afficher les items horizontalement. La propriété margin-right ajoute un espace entre les items</p>
+        </li>
+
+        <li>
+            <span>Avoir une largeur de 120 pixels et ajouter un espacement :</span>
+            <p>Ajouter et modifier les propriétés width et margin-right pour "ul li".</p>
+        </li>
+
+        <li>
+            <span>Changer le fond du menu en couleur tomate + la couleur des items en jaune :</span>
+            <p>"background-color: tomato;" définit la couleur de fond du menu. </p>
+            <p>"color: yellow;"" définit la couleur du texte des items en jaune.</p>
+        </li>
+
+        <li>
+            <span>Fixez la hauteur (height) du menu + le menu occupe toute la largeur :</span>
+            <p>J'ajoute les propriétés height et width au style de la balise  &lt;ul&gt;</p>
+        </li>
+
+        <li>
+            <span>Afficher l'item 'Help' à droite de la barre de menu :</span>
+            <p>J'utilise la propriété "float: right;"" sur l'élément &lt;li&gt; correspondant à 'Help', qui est le dernier "li" du "ul" (last-child).</p>
+        </li>
+
+        <li>
+            <span>Afficher une ligne de 2 pixels en bas du menu :</span>
+            <p>J'appelle la propriété border-bottom pour ajouter une bordure uniquement en bas de l'élément &lt;ul&gt;</p>
+        </li>
+    </ol>
+
+    <h2>Conclusion :</h2>
+    <p>En conclusion, ce TP2 m'a permis de consolider mes connaissances en feuilles de style, boîtes, et éléments en ligne. En appliquant différentes propriétés CSS, j'ai appris à personnaliser efficacement l'apparence des éléments HTML et à créer une mise en page attrayante. Les commentaires détaillés dans le code rendent la compréhension de chaque étape plus accessible. Ce travail m'a également offert l'occasion d'explorer des techniques avancées, comme l'utilisation de chiffres romains, le positionnement des éléments, et la manipulation d'effets au survol. Dans l'ensemble, ce TP a renforcé mes compétences en stylisation web et m'a fourni une base solide pour des projets web futurs.</p>
+    <p>(J'ai ajouté quelques styles au rendu pour mieux afficher la page : "text-decoration: none;" pour supprimer le soulignement du lien par défaut.)</p>
 
 
 </body>
