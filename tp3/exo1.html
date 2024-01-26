@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <script>
+     "use strict";
+   
+     function refresh() {
+       console.log("tick !");
+     }
+     
+     window.onload = () => {
+      //  window.setTimeout(refresh, 1000);
+      window.setInterval(refresh, 1000)
+     };
+   </script>
+ </head>
+ <body>
+  <h2>Oh, ma belle horloge !</h2>
+  <canvas id="clock"
+          width="800"
+          height="800">
+  </canvas>
+ </body>
+</html>
